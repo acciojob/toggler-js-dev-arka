@@ -47,12 +47,14 @@
     border-radius: 20px;
     border: 2px solid #ccc;
     transition: background-color 0.3s, color 0.3s;
+	position: relative;
+	left: 100px;
+	  
 	
   }
   
   .toggle-label:hover {
     background-color: #eee;
-	padding-left: 20px;
   }
   
   .toggle:checked + .toggle-label {
@@ -75,19 +77,19 @@
 <div class="container">
   <h2>How do you want your project to be?</h2>
   <div class="toggle-container">
-    <label class=" toggle-box" id="g1">
+    <label class=" toggle-box" >
       <input type="checkbox" id="good" class="toggle">
-      <span for="good" class="toggle-label">Good</span>
+      <span for="good" id="g1" class="toggle-label">Good</span>
 	</label>
     
-    <label class=" toggle-box" id="g2">
+    <label class=" toggle-box" >
       <input type="checkbox" id="fast" class="toggle">
-      <span for="fast" class="toggle-label">Fast</span>
+      <span for="fast" id="g2" class="toggle-label">Fast</span>
     </label>
 	  
-    <label class=" toggle-box" id="g3">
+    <label class=" toggle-box" >
       <input type="checkbox" id="cheap" class="toggle">
-      <span for="cheap" class="toggle-label">Cheap</span>
+      <span id="g3" for="cheap" class="toggle-label">Cheap</span>
     </label>
   </div>
 </div>
