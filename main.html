@@ -1,95 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toggler</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .toggle-container {
-    margin-bottom: 20px;
-	  display: flex; 
-	  flex-direction: column;
-	  align-items: center;
-	  justify-content: space-between;
-	  gap : 20px;
-	  
-  }
-  
-  .toggle {
-    display: none;
-  }
-
-.toggle-box{
-	/* position: relative;
-	left: 40px; */
-}
-  
-  .toggle-label {
-    display: inline-block;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 2px solid #ccc;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .toggle-label:hover {
-    background-color: #eee;
-  }
-  
-  .toggle:checked + .toggle-label {
-    background-color: #4CAF50;
-    color: #fff;
-    border-color: #4CAF50;
-  }
-
-	h2{
-		text-align:center;
-	}
-
-.toggle-box input{
-	
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
-  <h2>How do you want your project to be?</h2>
-  <div class="toggle-container">
-    <label class=" toggle-box" >
-      <input type="checkbox" id="good" class="toggle">
-      <span for="Good" id="g1" class="toggle-label">Good</span>
-	</label>
-    
-    <label class=" toggle-box" >
-      <input type="checkbox" id="fast" class="toggle">
-      <span for="Fast" id="g2" class="toggle-label">Fast</span>
-    </label>
-	  
-    <label class=" toggle-box" >
-      <input type="checkbox" id="cheap" class="toggle">
-      <span id="g3" for="Cheap" class="toggle-label">Cheap</span>
-    </label>
-  </div>
-</div>
+<h2>How do you want your project to be</h2>
 
+<div class="toggle-container">
+	<label class="g1 toggle-div">
+		<input type="checkbox" class="toggle" id="good" >
+		<span class="toggle-span round"></span>
+		<label class="toggle-text">Good</label>
+	</label>
+
+	<label class="g2 toggle-div">
+		<input type="checkbox" class="toggle" id="cheap" >
+		<span class="toggle-span round"></span>
+		<label class="toggle-text">Cheap</label>
+	</label>
+
+	<label class="g3 toggle-div">
+		<input type="checkbox" class="toggle" id="fast" >
+		<span class="toggle-span round"></span>
+		<label class="toggle-text">Fast</label>
+	</label>
+	
+</div>
+  
 <script>
   const checkboxes = document.querySelectorAll('.toggle');
   checkboxes.forEach(checkbox => {
@@ -106,4 +48,5 @@
 </script>
 
 </body>
-</html>
+</html> 
+  
