@@ -68,3 +68,4 @@ input:checked + .toggle-span:before {
 .toggle-span.round:before {
 	border-radius: 50%;
 }
+
