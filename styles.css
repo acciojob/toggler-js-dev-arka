@@ -15,7 +15,7 @@ h2 {
 
 .toggle-text {
 	position: absolute;
-	left: 84px; /* Adjusted left position */
+	left: 84px; 
 	top: 4px;
 	font-weight: bold;
 }
@@ -31,7 +31,7 @@ h2 {
 	position: absolute;
 	cursor: pointer;
 	top: 0;
-	left: 0; /* Adjusted left position */
+	left: 0; 
 	right: 0;
 	bottom: 0;
 	background-color: #ccc;
@@ -43,7 +43,7 @@ h2 {
 	content: "";
 	height: 26px;
 	width: 26px;
-	left: 4px; /* Adjusted left position */
+	left: 4px; 
 	bottom: 4px;
 	background-color: white;
 	transition: 0.4s;
@@ -58,7 +58,7 @@ input:focus + .toggle-span {
 }
 
 input:checked + .toggle-span:before {
-	transform: translateX(30px); /* Adjusted translation */
+	transform: translateX(30px); 
 }
 
 .toggle-span.round {
