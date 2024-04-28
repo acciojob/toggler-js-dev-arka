@@ -1,84 +1,70 @@
-*{
+* {
 	font-family: "Open Sans", sans-serif;
 }
 
-
-.toggle-container{
+.toggle-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 12px;
 }
 
-h2{
-	text-align:center;
+h2 {
+	text-align: center;
 }
 
-.toggle-text{
+.toggle-text {
 	position: absolute;
-	left: 88px;
+	left: 84px; /* Adjusted left position */
 	top: 4px;
 	font-weight: bold;
 }
 
-
 .toggle-div {
-    position: relative;
-    display: inline-block;
-    width: 64px;
-    height: 34px;
-  }
-  
-  
-  .toggle-span{
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: -2px;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  
-  .toggle-span:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 8px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  
+	position: relative;
+	display: inline-block;
+	width: 64px;
+	height: 34px;
+}
 
-  
-  input:checked + .toggle-span {
-    background-color: #8e44ad;
-  }
-  
-  input:focus + .toggle-span {
-    box-shadow: 0 0 1px #8e44ad;
-  }
-  
-  input:checked + .toggle-span:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
+.toggle-span {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0; /* Adjusted left position */
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+}
 
+.toggle-span:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px; /* Adjusted left position */
+	bottom: 4px;
+	background-color: white;
+	transition: 0.4s;
+}
 
+input:checked + .toggle-span {
+	background-color: #8e44ad;
+}
 
-  
-  .toggle-span.round {
-    border-radius: 34px;
-  }
-  
-  .toggle-span.round:before {
-    border-radius: 50%;
-  }
-  
+input:focus + .toggle-span {
+	box-shadow: 0 0 1px #8e44ad;
+}
+
+input:checked + .toggle-span:before {
+	transform: translateX(30px); /* Adjusted translation */
+}
+
+.toggle-span.round {
+	border-radius: 34px;
+}
+
+.toggle-span.round:before {
+	border-radius: 50%;
+}
